@@ -1,4 +1,7 @@
-a = set(input().strip().split())
-b = set(input().strip().split())
+def is_palindrome(line):
+    return line == line[::-1]
 
-print(" ".join(sorted(list(a & b))))
+
+a = "".join(input().strip().split()).lower()
+
+print("yes" if is_palindrome(a) else "no")
