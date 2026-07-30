@@ -1,6 +1,10 @@
+def minmax(arr):
+    return min(arr), max(arr)
+
 n = int(input())
 nums = [int(input()) for _ in range(n)]
 
-for i in nums:
-    if i % 2 == 0:
-        print(i * 2) 
+a, b = minmax(nums)
+
+print(a)
+print(b)
