@@ -1,7 +1,7 @@
 from collections import defaultdict
 
 n = int(input())
-a = [input().strip().split() for _ in range(4)]
+a = [input().strip().split() for _ in range(n)]
 
 d = defaultdict(list)
 for key, value in a:
