@@ -1,2 +1,6 @@
 n = int(input())
-print(sorted(list(set([int(input()) for _ in range(n)])))[-2])
+nums = [int(input()) for _ in range(n)]
+
+for i in nums:
+    if i % 2 == 0:
+        print(i * 2) 
