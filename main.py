@@ -1,10 +1,5 @@
-def minmax(arr):
-    return min(arr), max(arr)
+a = input().strip().split()
+d = {word: a.count(word) for word in a}
 
-n = int(input())
-nums = [int(input()) for _ in range(n)]
-
-a, b = minmax(nums)
-
-print(a)
-print(b)
+for word, count in d.items():
+    print(word, count)
