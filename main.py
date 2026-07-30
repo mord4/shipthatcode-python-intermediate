@@ -1,7 +1,8 @@
-def is_palindrome(line):
-    return line == line[::-1]
+def average(*nums):
+    return sum(nums) / len(nums)
 
 
-a = "".join(input().strip().split()).lower()
-
-print("yes" if is_palindrome(a) else "no")
+n = int(input())
+nums = [float(input()) for _ in range(n)]
+# Call average(*nums) and print rounded to 2 decimal places
+print(f"{average(*nums):.2f}")
