@@ -1,5 +1,11 @@
-a = input().strip().split()
-d = {word: a.count(word) for word in a}
+from collections import defaultdict
 
-for word, count in d.items():
-    print(word, count)
+n = int(input())
+a = [input().strip().split() for _ in range(4)]
+
+d = defaultdict(list)
+for key, value in a:
+    d[value].append(key)
+
+for k, v in d.items():
+    print(k + ":", ", ".join(v))
